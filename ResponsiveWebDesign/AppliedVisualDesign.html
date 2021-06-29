@@ -11,7 +11,41 @@
                 <li><em>Use em tag to italicize text. Can also set "font-style" CSS property to italic</em></li>
                 <li><s> Use s tag to strikethrough text. </s></li>
                 <li><hr>Use hr tag to add horizontal line across width of containing element</li>
-                <li></li>
+                <li>Use "background-color" to specify background color of element. Can also use rgba() instead of hex codes or rgb()</li>
+                <li>Use "font-size" to change size of font in element</li>
+                <li>Use the "box-shadow" property to add one or more shadows to element. It takes values for offset-x, offest-y, blur-readius, spread-radius, and color, in that order. The blur-radius and spread-radius are optional. Multiple box-shadows can be created by using commas to separate properties.</li>
+                <li>Use # before id in css file to add style to elements with specific ids</li>
+                <li>Use opacity property to adjust opacity or transparency of item. 1=opaque, .5=half see-through, and 0=transparent</li>
+                <li>Use "text-transform" property to change appearance of text. Can use lowercase, uppercase, capitalize, initial, inherit, none(original text). </li>
+                <li>Use "font-weight" property to change how thick or thin characters are in section/element</li>
+                <li>Use "line-height" property to change height of each line in block of text</li>
+                <li>Pseudo-classes can be added to selectors to select specific state of element. For example, using ":hover" can allow for different properties to appear if hovering over element.</li>
+                <li>CSS Box Model: Block-level items start on new line(headings, paragraphs, and divs), while inline items sit within surrounding content(images or spans). Adding "position:relative" allows CSS to specify how element should move relative to its current position of normal page flow. It pairs with "off-set" properties of left, right, top or bottom.</li>
+                <li>Use left, right, bottom, or top to move element away from specified location(read line above)</li>
+                <li>Another option for "position" property is absolute, which locks the element in place relative to its parent container.</li>
+                <li> Another option for "position" property is fixed, which is a type of absolute positioning that locks elemnt relative to browser window. Element with fixed position won't move when user scrolls.</li>
+                <li>The "float" property removes elements from normal flow of document and pushed to left or right or containing parent element. Commonly used with "width" property to specify horizontal space that floated element requires.</li>
+                <li>When elements are positioned to overlap, element coming later is by default on top of other elements. Setting "z-index" property to higher number will let page know how to stack elements.</li>
+                <li>To center block element horizontally, set "margin" property to value of auto. Inline elements can be changed to block elemnts by setting "display" property to value of block. </li>
+                <li>Adding color can add interest to page. Complementary colors are those opposite to each other on color wheel. </li>
+                <li>Tertiary colors are result of combining a primary color with one of its secondary color neighbors. One example of using tertiary colors is in split-complementary color scheme, which starts with a base color and then pairs it with two colors that are adjacent to its complement.</li>
+                <li>Use hsl() to adjust hue(hue uses color wheel concept, specify angle between 0-360), saturation(amount of gray in color, specify percentage), and lightness(amount of white or black in color, specify as percentage, with 0%(black), 50%(normal color) and 100%(white)</li>
+                <li>All elements have "background-color" set to transparent. </li>
+                <li>One can add color transitions or gradients to elements by setting "background" property to "linear-gradient()". First argument in function specifies direction which color transition starts(stated as #deg). Following arguments are colors from which gradient starts at and finishes with.</li>
+                <li>Use "repeating-linear-gradient()" to repeat a specified gradient pattern. For this function, angle value is direction of gradient. Following arguments contain color as well as width where each transition takes place(percentage of number of pixels)</li>
+                <li>Set the "background" property to url() with argument as link to specific image to set background to.</li>
+                <li>Use the "transform" property along with scale() to change scale of element. Argument in function is a number.</li>
+                <li>Can also apply the "transform" property to the to hover state of element</li>\
+                <li>Use the skewX() for the "transform" property to skew selected element along its X axis by a given degree. Argument is in form of #deg</li>
+                <li>Use the skewY() for the "transform" property to skew selected element along its Y axis by a given degree(see line above)</li>
+                <li>To make more complex shapes, one can use the ::before and ::after pesudo-elements.  </li>
+                <li>To animate element, one must understand @keyframes rule. Animation properties control how animation behaves and the rule controls what happens during animation. There are a total of 8 animation properties. First create id for name of animation. Set property "animation-name" to the name of animation to use for @keyframes. The "animation-duration" can be set to #s or #ms for duration. Then create @keyframes animation-name. Add specific percentages to tell at which time different properties will appear. </li>
+                <li>The @keyframes can be used to change the color of a button in its hover state.</li>
+                <li>One can set the "animation-fill-mode" property to forwards to specify the style applied to an element when the animatino has finished. </li>
+                <li>Create visual direction by fading element using the opacity property in @keyframes.</li>
+                <li>Use the "animation-iteration-count: property to control how many tie syou would like to loop through animation. Set it to a specific number or to infinite. </li>
+                <li>The "animation-timing-function" property controls how quickly an animated element changes over duration of the animation(acceleration).Default value is ease(starts slow, speeds up in middle, slows down at end), ease-out(quick in beginning and then slows down), ease-in(slow in beginning, speeds up at end), linear(constant speed throughout).</li>
+                <li>The "animation-timing function" property can be set to cubic-bezier(), where arguments are x1, y1, x2, y2. These values are points on 1by1 grid. Default values are on (0,0) and (1,1).</li>
             </ul>
         </div>
     </body>

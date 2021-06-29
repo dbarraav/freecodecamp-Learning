@@ -155,3 +155,16 @@
 * Can also sort by values instead of keys
 * List comprehension can be used for a shorter version of code
 
+## Regular Expressions
+* A regular expression, aka a "regex" or "regexp", provides a concise and flexible means for matching strings of text.
+* A smart "find" or "search"
+* Very powerful and cryptic. 
+* Before using regular expressions, import re
+    * Use re.search() to see if string matches a regular expression. Similar to find()
+    * Use re.findall() to extract portions of a string that match regular expression. Similar to combination of find() and slicing()
+* Wild-Card characters: dot character matches any character
+    * Look up guide for regular expressions
+* Can fine-tune match, depends on how "clean" data is and purpose of application
+
+## Regular Expressions: Matching and Extracting Data
+* 

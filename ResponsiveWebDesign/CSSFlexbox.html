@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Notes</h1>
+        <div>
+            <ul>
+                <li>Flexbox makes it easy to center elements on page and create dynamic user interfaces that shrink and expand automatically.</li>
+                <li>Placing "display" property on element and setting it to flex allows one to use flex properties to build a responsive page.It sets elements within same line.</li>
+                <li>Use "flex-direction" property will align children of element into rows or columns. Can set this property to row, column, row-reverse, and column-reverse. Default is row.</li>
+                <li>The "justify-content" property tells page how to align and space out flex items a certain way. Different options to which to set it to are center(items aligned to center of flex container), flex-start(align to start of container), flex-end(align to end of container), space-between(align to center of main axis, with extra space placed between items), space-around(similar to space-between but first and last items are not locked to edges of container), and space-evenly(distributes space evenly between flex items with a full space at either end of container).</li>
+                <li>THe "align-items" property is similar to "justify-content" property. It allows one to align flex items along cross axis. Options are flex-start, flex-end, center, stretch(stretch items to fill flex container), and baseline(align items to their baselines)</li>
+                <li>The "flex-wrap" property tells CSS to wrap items. By default, a flex container will fit all flex items together. Options to set property to are nowrap(does not wrap items), wrap(wraps items onto multiple lines from top-> bottom if in rows and left-> right if in columns), wrap-reverse(reverse of wrap).</li>
+                <li>Properties mentioned apply to flex container(parent element). The "flex-shrink" property allows item to shring if flex container is too small(width of parent container is smaller than combined widths of all flex items). Set property to a number(higher number means more shrinkage)</li>
+                <li>Opposite of "flex-shrink" is "flex-grow". This proprty controls size of items when parent container expands.</li>
+                <li>The "flex-bases" property specifies initial size of item before CSS makes adjustments with flex-shrink or flex-grow. Units for this property are px, em, %, etc. Value of auto sizes items based on content.</li>
+                <li>Shortcut to setting multiple flex properties at once is with "flex" property. Default property for "flex" are 0(flex-grow), 1(flex-shrink), and auto(flex-basis). </li>
+                <li>The "order" property tells CSS how order of flex items appear in flex container. Default is items will appear in same order as in HTML. Property takes numbers are values(negative numbers too)</li>
+                <li>The "align-self" property allows one to adjust each items' alignment individually, instead of setting them all at once. It accepts same values as "align-items" and will override any value set by "align-items" property.</li>
+            </ul>
+        </div>
+    </body>
+</html>

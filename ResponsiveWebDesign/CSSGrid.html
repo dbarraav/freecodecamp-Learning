@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Notes</h1>
+        <div>
+            <ul>
+                <li>CSS Grid turns HTML into grid to allows child element placement anywhere within.</li>
+                <li>One can turn HTML element into grid container by setting "display" property to grid</li>
+                <li>Once element is made into grid, add columns by using "grid-template-columns" property and setting it to "#px #px"(ex: has 2 columns of #px)</li>
+                <li>The "grid-template-rows" property works like "grid-template-columns" property. </li>
+                <li>One can use px or em to define size of rows/columns. Other options are fr(sets row/column to fraction of available space), auto(sets row/column to width/height of its content automatically), and %(adjusts row/column to percent width of container)</li>
+                <li>To add gap between columns, use "grid-column-gap" and set it to #px</li>
+                <li>The "grid-row-gap" property works like "grid-column-gap".</li>
+                <li>The "grid-row" property is shorthand for "grid-row-gap" and "grid-column-gap". If set to one value, a gap will be between all rows and columns. If set two 2 values, first #px is for row gap and second #px is for column gap </li>
+                <li>"Lines" are the ones used to create a grid.To control number of columns an items consumes, use "grid-column" property. Set to #(line # at which it starts) / #(line # at which it ends)</li>
+                <li>Property "grid-row" works like "grid-column"</li>
+                <li>Align item horizontally with "justify-self" property. Default is set stretch(makes content fill whole width of cell). Can also set to start(aligns content at left of cell), center(aligns contents in center of cell), and end(aligns content at right of cell).</li>
+                <li>Align item vertically by using "align-self" property. Accepts same values as "justify-self" property.</li>
+                <li>Can use "justify-items" on grid container to align all items horizontally at once.</li>
+                <li>The "align-items" property works like "justify-items", except to align all items vertically.</li>
+                <li>Can group cells of grid together with "grid-template-areas" property. Set to "element element" "element element". Can designate empty cell with a dot. Element can be "header", "footer", etc</li>
+                <li>Once "grid-template-areas" is used, place item in custom area by referencing name given to it by using "grid-area" property.</li>
+                <li>If grid doesn't have an areas template to reference, "grid-area" can be used to create area on the fly. Set it to "grid-area: horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at;"</li>
+                <li>When using "grid-template-columns" or "grid-template-rows", rather than setting each value individually, one can use repeat function. First argument is number of rows/columns and second argument is #px. repeat function doesn't have to fill out all rows/columns. </li>
+                <li>Another function for "grid-template-columns" and "grid-template-rows" is minmax().It's used to limit size of items when grid container changes size. The arguments are min width and max width.</li>
+                <li>First argument of repeat() function can be set to auto-fill to create flexible layout with minmax(). </li>
+                <li>First argument of repeat() function can also be set to auto-fit. Instead of inserting empty rows/columns and pushing items to side when container's size exceeds, like wiith auto-fill, auto-fit collapses empty rows/columns and stretches items to fit size of container.</li>
+                <li>Media queries can create responsive layouts.</li>
+                <li>One can create a grid within a grid.</li>
+            </ul>
+        </div>
+    </body>
+</html>

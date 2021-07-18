@@ -1,42 +1,68 @@
-.title{
-    font-size: 2.5em;
+#title{
+    font-size:36px;
     color: black;
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(161, 159, 159);
     text-align: center;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
 }
-main{
-    color: black;
-    background-color: rgb(216, 216, 216);
-    margin-top: 0px;
-    padding-top: 0px;
+body{
+    color:black;
+    background-color:rgb(156, 156, 156);
+    margin-top:0px;
+    padding-top:0px;
 }
 
-.image-title{
-    font-size: 1em;
-    text-align: center;
-    color: black;
+.img-div{
+    font-size:16px;
+    text-align:center;
+    color:black;
+    margin-bottom:12px;
 }
 
 figure{
-    background-color: white;
-    margin: 0px 10px 0px 10px;
-    padding: 0px 10px 0px 10px;
-    max-height: 500px;
+    background-color:white;
+    margin:0px 10px 0px 10px;
+    padding:0px 10px 0px 10px;
 }
 
-img{
+#img-div img{
+    max-width:100%;
+    display:block;
     height:auto;
+    margin:0 auto;
 }
 
-.timeline{
-    font-size: 1.5em;
+#img-div figcaption{
+    text-align:center; 
+    font-size:18px; 
 }
 
-ul{
-    font-size: 1em;
+#tribute-info p{
+    font-size:24px;
+    text-align:center;
 }
-.moreinfo-link{
-    font-size: 3em;
+
+#tribute-info ul{
+    margin:0px auto 0px auto;
+    max-width:450px;
+    background-color: rgb(129, 129, 129);
+}
+
+#tribute-info ul li{
+    padding-bottom:15px;
+}
+
+#tribute-info ul li strong{
+    font-size:18px;
+}
+
+#citation{
+    margin:30px auto 25px auto;
+    max-width:450px;
+}
+
+#moreinfo-link{
+    font-size:24px;
+    margin:0px 10% 0px 10%;
 }

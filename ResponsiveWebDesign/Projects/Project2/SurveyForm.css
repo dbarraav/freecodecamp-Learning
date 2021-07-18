@@ -1,0 +1,43 @@
+body{
+    background-color:rgb(28, 47, 82);
+}
+
+h1{
+    text-align:center;
+    color:white;
+}
+
+#description{
+    text-align:center;
+    color:white;
+}
+
+#survey-form {
+    background-color: rgb(86, 113, 187);
+    width: 33%;
+    color:white;
+    font-size:18px;
+    margin:0px 33% 0px 33%;
+}
+
+.form-question{
+    margin:0px 20px 10px 20px;
+}
+
+#name, #email, #number, #role{
+    margin:5px 0px 15px 0px;
+    width:90%;
+}
+
+.form-question option, input{
+    margin-bottom:10px;
+}
+
+.form-question button, select{
+    width:100%;
+    margin-bottom:15px;
+}
+
+.form-question textarea{
+    width:100%;
+}

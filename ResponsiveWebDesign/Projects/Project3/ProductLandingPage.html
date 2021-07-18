@@ -1,85 +1,114 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="ProductLandingPage.css">
     <header id="header">
-        <nav>
-            <a href="#product-features">Features</a>
-            <a href="">How It Works</a>
-            <a href="">Pricing</a>
+        <div id="header-img-div">
+            <img id="header-img" src="ml-image.png">
+        </div>
+        <nav id="nav-bar">
+            <a class="nav-link" href="#ml-uses">ML Uses</a>
+            <a class="nav-link" href="#ml-concepts">ML Concepts</a>
+            <a class="nav-link" href="#projects">Projects</a>
         </nav>
     </header>
 
     <body>
-        <div>
-            Handcrafted, home-made masterpieces<br>
-            <input type="text" placeholder="Enter your email address"><br>
-            <button type="submit"><strong>GET STARTED</strong></bold></button>
+        <div id="video-div">
+            <h2>Where to get started with Machine Learning</h2>
+            <iframe id= "video" width="420" height="315" src="https://www.youtube.com/embed/_Z9TRANg4c0"></iframe>
         </div>
-        <div class="product-features" id = "product-features">
-            <div class="product-feature1">
-                <div class="product-feature1-image"></div>
-                <div class="product-feature1-title">Premium Materials</div>
-                <div class="product-feature1-description">
-                    Our trombones use the shiniest brass which is sourved locally. This will increase the longevity of your purchase.
-                </div>
-            </div>
 
-            <div class="product-feature2">
-                <div class="product-feature2-image"></div>
-                <div class="product-feature2-title">Fast Shipping</div>
-                <div class="product-feature2-description">
-                    We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.
-                </div>
-            </div>               
-
-            <div class="product-feature3">
-                <div class="product-feature3-image"></div>
-                <div class="product-feature3-title">Quality Assurance</div>
-                <div class="product-feature3-description">
-                    For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
-                </div>
-            </div>
+        <div class="ml-uses" id="ml-uses">
+            <h2>What can you do with Machine Learning?</h2>
+            <p>There are numerous fields in which machine learning is used in. A list of them is below:</p>
+            <ul>
+                <li>Bioinformatics</li>
+                <li>Computer Vision</li>
+                <li>Natural Language Processing</li>
+                <li>Optimization</li>
+                <li>Sentiment Analysis</li>
+                <li>Software Engineering</li>
+                <li>Speech Recognition</li>
+                <li>Times-series forecasting</li>
+            </ul>
         </div>
-        <!--
-        <div class="how-it-works">
-            <iframe width="420" height="315" src=""></iframe>
+        <!--Information for next div element is at https://towardsdatascience.com/-->
+        <div class="ml-concepts" id="ml-concepts">
+            <h2>Machine learning is made up </h2>
+            <p>
+                Key elements of machine learning are representation, evaluation, and optimization.
+                In addition, there are four types of machine learning:
+            </p>
+            <ul>
+                <li>
+                    Supervised learning
+                    <ul>
+                        <li>Nearest Neighbor</li>
+                        <li>Naive Bayes</li>
+                        <li>Decision Trees</li>
+                        <li>Linear Regression</li>
+                        <li>Support Vector Machines</li>
+                        <li>Neural Networks</li>
+                    </ul>
+                </li>
+                <li>
+                    Unsupervised learning
+                    <ul>
+                        <li>k-means clustering</li>
+                        <li>Association Rules</li>
+                    </ul>
+                </li>
+                <li>
+                    Semi-supervised learning
+                </li>
+                <li>
+                    Reinforcement learning
+                    <ul>
+                        <li>Q-Learning</li>
+                        <li>Temporal Difference</li>
+                        <li>Deep Adversarial Networks</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        -->
-        <div class="pricing">
-            <div class="tenor-trombone">
-                $600<br>
-                Lorem ipsum.<br>
-                Lorem ipsum.<br>
-                Lorem ipsum dolor.<br>
-                Lorem ipsum.<br>
-                <button type="submit"><strong>SELECT</strong></bold></button>
+        
+        
+        <h2 id="projects-title">Machine Learning Projects</h2>
+        <div id="projects">
+            <div class="ml-project" id="house-prices">
+                <div>FREE</div><br>
+                <h3 id="ml-project-title">
+                    Predicting House Prices
+                </h3>
+                <p>Practice feature engineering and advanced regression techniques to predict final price of homes</p>
+                <a id="more-info" href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques">Start project</a>
             </div>
             
-            <div class="bass-trombone">
-                $900<br>
-                Lorem ipsum.<br>
-                Lorem ipsum.<br>
-                Lorem ipsum dolor.<br>
-                Lorem ipsum.<br>    
-                <button type="submit"><strong>SELECT</strong></bold></button>
+            <div class="ml-project" id="titanic-survival">
+                <div>FREE</div><br>
+                <h3 id="ml-project-title">
+                    Predicting survival<br> on Titanic
+                </h3>
+                <p>Use machine learning to create model for survival prediction on Titanic shipwreck</p>
+                <a id="more-info" href="https://www.kaggle.com/c/titanic">Start project</a>
             </div>
-
-            <div class="valve-trombone">
-                $1200<br>
-                Plays similar to a Trumpet.<br>
-                Great for Jass Bands.<br>
-                Lorem ipsum dolor.<br>
-                Lorem ipsum.<br> 
-                <button type="submit"><strong>SELECT</strong></bold></button>
+            
+            <div class="ml-project" id="digit-recognizer">
+                <div>FREE</div><br>
+                <h3 id="ml-project-title">
+                    Predicting digits<br> from drawings
+                </h3>
+                <p>Practice computer vision fundamentals(neural networks) and classification methods</p>
+                <a id="more-info" href="https://www.kaggle.com/c/digit-recognizer">Start project</a>
             </div>
+       
         </div>
 
-        <footer>
-        <p>
-            <a href="#header">Privacy</a>
-            <a href="#header">Terms</a>
-            <a href="#header">Contact</a>
-        </p>
-        <p>Copyright 2016, Original Trombones</p>
-        </footer>
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <p>Enter your email below to learn get more information about Machine Learning</p>
+            <input id="email" type="email" placeholder="Enter your email address" name="email"><br>
+            <input id="submit" type="submit" value="SUBMIT" name="SUBMIT">
+        </form>
     </body>
 </html>

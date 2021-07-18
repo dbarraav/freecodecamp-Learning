@@ -1,247 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <nav>
-            <p>JS Documentation</p>>
-            <a href="">Introduction</a><br>
-            <a href="">What you should already know</a><br>
-            <a href="">JavaScript and Java</a><br>
-            <a href="">Hello world</a><br>
-            <a href="">Variables</a><br>
-            <a href="">Declaring variables</a><br>
-            <a href="">Variable scope</a><br>
-            <a href="">Global variables</a><br>
-            <a href="">Constants</a><br>
-            <a href="">Data types</a><br>
-            <a href="">if...else statement</a><br>
-            <a href="">while statement</a><br>
-            <a href="">Function declarations</a><br>
-            <a href="">Reference</a><br>
+    <link rel="stylesheet" href="TechnicalDocumentationPage.css">
+    <body id="whole-body">
+        <nav id="navbar">
+            <header>Machine Learning</header>
+            <a href="#Classification" class="nav-link">Classification</a><br>
+            <a href="#Clustering" class="nav-link">Clustering</a><br>
+            <a href="#Regression" class="nav-link">Regression</a><br>
+            <a href="#Feature_Engineering" class="nav-link">Feature Engineering</a><br>
+            <a href="#Reinforcement_Learning" class="nav-link">Reinforcement Learning</a><br>
         </nav>
 
-        <div id="section1">
-            <p>Introduction</p>
-            JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+        <main id="main-doc">
+            <section class="main-section" id="Classification">
+                <header>Classification</header>
+                <p>
+                    Classification is used to assign an observation to a specific category within
+                    a set of categories. Here are two different types of classification: binary classification
+                    and multiclass classification. <br>
+                    With binary classification, one can assign elements of a set into two groups based a rule.
+                    Some of the methods used for binary classification are: decision trees, bayesian
+                    networks, support vector machines and probit model.<br>
+                    
+                </p>
+                <code></code>
+                <p></p>
+            </section>
 
-            JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
-            <ul>
-                <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
-                <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li> 
-            </ul>
-        </div>
+            <section class="main-section" id="Clustering">
+                <header>Clustering</header>
+                <p></p>
+                <ul>
+                    <li>Affinity Propagation</li>
+                    <li>Agglomerative Clustering</li>
+                    <li>BIRCH</li>
+                    <li>DBSCAN</li>
+                    <li>K-Means</li>
+                </ul>
+                <p></p>
+                <code></code>
+            </section>
 
-        <div id="section2">
-            <p>What you should already know</p>
-            This guide assumes you have the following basic background:
-            <ul>
-                <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
-                <li>Good working knowledge of HyperText Markup Language (HTML).</li>
-                <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
-            </ul>
-        </div>
-
-        <div id="section3">
-            <p>Javascript and Java</p><br>
-            JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
-
-            In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.
-
-            JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.
-        </div>
-
-        <div id="section4">
-            <p>Hello world</p>
-            To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
-            <div id="example">
-                function greetMe(yourName) { alert("Hello " + yourName); }
-                greetMe("World");
-            </div>
-            Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
-        </div>
-
-        <div id="section5">
-            <p>Variables</p>
-            You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
-
-            A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
-
-            You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.
-        </div>
-
-        <div id="section6">
-            <p>Declaring variables</p>
-            You can declare a variable in three ways:
-            With the keyword var. For example,
-            <div id="example">
-                var x = 42.
-            </div>
-            This syntax can be used to declare both local and global variables.
-
-            By simply assigning it a value. For example,
-            <div id="example">
-                x = 42.
-            </div>
-            This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
-
-            With the keyword let. For example,
-            <div id="example">
-            let y = 13.
-            </div>
-            This syntax can be used to declare a block scope local variable. See Variable scope below.
-        </div>
-
-        <div id="section7">
-            <p>Variable scope</p>
-            When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.
-
-            JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
-            <div id="example">
-            if (true) { var x = 5; } console.log(x); // 5
-            </div>
-            This behavior changes, when using the let declaration introduced in ECMAScript 2015.
-
-            <div id="example">
-            if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
-            defined
-            </div>
-        </div>
-
-        <div id="section8">
-            <p>Global Variables</p>
-            Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.
-
-            Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
-        </div>
-
-        <div id="section9">
-            <p>Constants</p>
-            You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
-            <div id="example">
-            const PI = 3.14;
-            </div>
-            A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.
-
-            The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.
-
-            You cannot declare a constant with the same name as a function or variable in the same scope. For example:
+            <section class="main-section" id="Regression">
+                <header>Regression</header>
+                <p></p>
+                    <code></code>
+                <p></p>
+            </section>
             
-            <div id="example">
-            // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
-            CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
-            }
-            </div>
 
-            However, object attributes are not protected, so the following statement is executed without problems.
-            
-            <div id="example">
-            const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";
-            </div>
-        </div>
+            <section class="main-section" id="Feature_Engineering">
+                <header>Feature Engineering</header>
+                <p></p>
+                    <code></code>
+                <p></p>
+                <p></p>
+                    <code></code>
+            </section>
 
-        <div id="section10">
-            <p>Data Types</p>
-            The latest ECMAScript standard defines seven data types:
-
-            <ul>
-                <li>
-                    Six data types that are primitives
-                    <ul>
-                        <li>Boolean. true and false.</li>
-                        <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
-                        <li>undefined. A top-level property whose value is undefined.</li>
-                        <li>Number. 42 or 3.14159.</li>
-                        <li>String. "Howdy"</li>
-                        <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
-                    </ul>
-                </li>
-                <li>and Object</li>
-            </ul>
-
-            Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.
-        </div>
-
-        <div id="section11">
-            <p>if...else statement</p>
-            Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:
-            <div id="example">
-            if (condition) { statement_1; } else { statement_2; }
-            </div>
-            condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.
-            You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:
-            <div>
-            if (condition_1) { statement_1; } else if (condition_2) { statement_2;
-            } else if (condition_n) { statement_n; } else { statement_last; }
-            </div>
-
-            In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:
-            <div id="example">
-            if (condition) { statement_1_runs_if_condition_is_true;
-            statement_2_runs_if_condition_is_true; } else {
-            statement_3_runs_if_condition_is_false;
-            statement_4_runs_if_condition_is_false; }
-            </div>
-
-            It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:
-            <div id="example">
-            if (x = y) { /* statements here */ }
-            </div>
-            If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example:
-            <div id="example">
-            if ((x = y)) { /* statements here */ }
-            </div>
-        </div>
-
-        <div id="section12">
-            <p>while statement</p>
-            A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:
-            <div id="example">
-                while (condition) statement
-            </div>
-            If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.
-            The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.
-
-            To execute multiple statements, use a block statement ({ ... }) to group those statements.
-
-            Example:
-            The following while loop iterates as long as n is less than three:
-
-            <div id="example">
-                var n = 0; var x = 0; while (n < 3) { n++; x += n; }
-            </di>
-
-            With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on the following values:
-            <ul>
-                <li>After the first pass: n = 1 and x = 1</li>
-                <li>After the second pass: n = 2 and x = 3</li>
-                <li>After the third pass: n = 3 and x = 6</li>
-            </ul>
-            After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.
-
-        </div>
-
-        <div id="section13">
-            <p>Function declarations</p>
-            A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
-            <ul>
-                <li>The name of the function.</li>
-                <li>A list of arguments to the function, enclosed in parentheses and separated by commas.</li>
-                <li>The JavaScript statement that define the function, enclosed in curly brackets, {}.</li>
-            </ul>
-            For example, the following code defines a simple function named square:
-            <div id="example">
-                return number * number;
-            </div>
-
-            Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.
-        </div>
-
-        <div id="section14">
-            <p>Reference</p>
-            <ul>
-                <li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a></li>
-            </ul>
-        </div>
-
-        
+            <section class="main-section" id="Reinforcement_Learning">
+                <header>Reinforcement Learning</header>
+                <p></p>
+            </section>
+        </main>
     </body>
 </html>
+
+
+<!--
+    Websites to Use
+    https://machinelearningmastery.com/clustering-algorithms-with-python/
+    https://en.wikipedia.org/wiki/Machine_learning
+    https://machinelearningmastery.com/types-of-classification-in-machine-learning/
+    https://machinelearningmastery.com/process-for-working-through-machine-learning-problems/
+-->

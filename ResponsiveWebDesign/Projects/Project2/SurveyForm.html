@@ -1,44 +1,66 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
-    
-    <header>freeCodeCamp Survey Form<br>
-    Thank you for taking the time to help us improve the platform
-    </header>
     <body>
-        <div>
-            Name<br>
-            <input type= "text" placeholder="Enter your name"><br>
-            Email<br>
-            <input type="text" placeholder="Enter your Email"><br>
-            Age(optional)<br>
-            <input type="text" placeholder="Age"><br>
-            Which option best describes your current role?<br>
-            <input type="text" placeholder="Select current role"><br>
-            Would you recommend freeCodeCamp to a friend?<br>
-            <label><input type="radio" checked>Definitely</label><br>
-            <label><input type="radio" >Maybe</label><br>
-            <label><input type="radio" >Not sure</label><br>
+        <link rel="stylesheet" href="SurveyForm.css">
+        <h1 id="title">Engineering Student Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        
+        <form id="survey-form">
+            <div class="form-question">
+            <label for="name" id="name-label">Name</label><br>
+            <input id="name" type="text" placeholder="Enter your name" required><br>
+
+            <label for="email" id="email-label">Email</label><br>
+            <input id="email" type="email" placeholder="Enter your Email" required><br>
             
-            What is your favorite feature of freeCodeCamp?<br>
+            <label for="number" id="number-label">Age(optional)</label><br>
+            <input id="number" type="number" placeholder="Age" min="18" max="80" required><br>
+            </div>
+
+            <div class="form-question">
+                <label id="current-role">Which option best describes your current role?</label><br>
+                <select name="options" id="dropdown">
+                    <option default>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="no-opinion">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select><br>
+            </div>
+
+            <div class="form-question">
+            <label>Would you recommend engineering to a friend as a major?</label><br>
+            <input name="recommendation" type="radio" value="definitely"checked>Definitely<br>
+            <input name="recommendation" type="radio" value="maybe">Maybe<br>
+            <input name="recommendation" type="radio" value="not-sure">Not sure<br>
+            </div>
             
-            What would you like to see improved?(Check all that apply)<br>
-            <label ><input type="checkbox">Front-end Projects</label><br>
-            <label ><input type="checkbox">Back-end Projects</label><br>
-            <label ><input type="checkbox">Data Visualization</label><br>
-            <label ><input type="checkbox">Challenges</label><br>
-            <label ><input type="checkbox">Open Source Community</label><br>
-            <label ><input type="checkbox">Gitter help rooms</label><br>
-            <label ><input type="checkbox">Videos</label><br>
-            <label ><input type="checkbox">City Meetups</label><br>
-            <label ><input type="checkbox">Wiki</label><br>
-            <label ><input type="checkbox">Forum</label><br>
-            <label ><input type="checkbox">Additional Courses</label><br>
+            <div class="form-question">
+                <label id="feature">What is your favorite feature of this engineering program?</label><br>
+                <select name="options">
+                    <option default>Select an option</option>
+                    <option value="professors">Professors</option>
+                    <option value="courses">Courses</option>
+                    <option value="community">Community</option>
+                </select><br>
+            </div>
+
+            <div class="form-question">
+                <label id="checkboxes">What would you like to see improved?(Check all that apply)</label><br>
+                <input type="checkbox" value="curriculum">Curriculum<br>
+                <input type="checkbox" value="additional courses">Additional Courses<br>
+                <input type="checkbox" value="advising">Advising<br>
+
+            </div>
             
-            Any comments or suggestions?<br>
-            <input type="text" placeholder="Enter your comment here.."><br>
-            <button type="submit">Submit</button>
-            
-        </div>
+            <div class="form-question">
+            <label>Any comments or suggestions?</label><br>
+            <textarea rows="5">Enter your comment here...</textarea>
+            <button id="submit" type="submit">Submit</button>
+            </div>
+
+        </form>
 
     </body>
 </html>

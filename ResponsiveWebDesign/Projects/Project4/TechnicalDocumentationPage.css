@@ -52,13 +52,32 @@ main{
 }
 
 .main-section header{
-    font-size:24px;
+    font-size:36px;
+    margin:10px 0;
+    padding: 0 0 0 0;
+    text-align: center;
+    color:black;
+    background-color: rgb(255, 179, 179);
 }
 
 .main-section p, ul li{
     font-size:16px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    color: black;
+}
+
+
+.main-section p{
+    background-color:rgb(201, 201, 201);
+}
+
+.main-section ul{
+    background-color: grey;
 }
 
 .main-section code{
     font-size:10px;
+    color:orange;
+    background-color: grey;
 }

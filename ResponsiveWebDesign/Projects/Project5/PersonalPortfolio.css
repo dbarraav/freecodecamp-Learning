@@ -22,13 +22,18 @@ nav a:hover{
     grid-template-columns: 1fr 1fr 1fr;
     background-color: rgb(117, 72, 72);
     padding:15px 0;
+    height:100vh;
 }
 
 #welcome-section img{
     grid-column:1/2;
-    width:100%;
-    height:100%;
+    width:200px;
+    height:200px;
     border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+    padding:0 0;
+    margin:0 0;
 }
 
 #welcome-section h1{
@@ -50,14 +55,15 @@ nav a:hover{
     grid-column:span 1;
     text-align:center;
     background-color:pink;
-    border-style: solid;
-    border-color: red;
     border-width: 1px;
     margin:5px 5px;
 }
 
 .project-tile a{
-    font-size:20px;
+    font-size:24px;
+    text-decoration: none;
+    color:black;
+    font-weight: 800;
 }
 
 .project-tile img{
@@ -67,6 +73,7 @@ nav a:hover{
 
 footer{
     text-align:right;
+    background-color: grey;
 }
 footer a{
     padding:0 5px;
@@ -77,9 +84,27 @@ footer a{
 
 footer a:hover{
     padding:0 5px;
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
     background-color:rgb(99, 99, 143);
     color:black;
 }
 
+@media (max-width:1000px){
+    #welcome-section{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgb(245, 153, 153);
+        padding:0 0;
+        margin:0 0;
+        height:100vh;
+    }
+    
+    .project-tile{
+        grid-column:span 1;
+        text-align:center;
+        background-color:rgb(133, 102, 108);
+        border-width: 1px;
+        margin:5px 5px;
+    }
+}

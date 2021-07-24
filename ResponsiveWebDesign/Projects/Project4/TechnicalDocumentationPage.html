@@ -21,46 +21,99 @@
                     With binary classification, one can assign elements of a set into two groups based a rule.
                     Some of the methods used for binary classification are: decision trees, bayesian
                     networks, support vector machines and probit model.<br>
-                    
                 </p>
-                <code></code>
-                <p></p>
+                <p>
+                    One method of SVM is the linear SVM. The linear SVM can be used to classify data into two classes.
+                    The following code can be used to import modules to accomplish the linear SVM. 
+                </p>
+                <code>
+                    from sklearn import svm<br>
+                    from sklearn import metrics<br>
+                    from sklearn.neighboers import KNeighborsClassifier
+                </code>
+
             </section>
 
             <section class="main-section" id="Clustering">
                 <header>Clustering</header>
-                <p></p>
+                <p>
+                    With clustering, one can group observation/objects into clusters. Observations
+                    in one cluster are more similar than to those in other groups/clusters. Below 
+                    is a list of some of the algorithms used for clustering: 
+                </p>
                 <ul>
-                    <li>Affinity Propagation</li>
-                    <li>Agglomerative Clustering</li>
+                    <li>Fuzzy clustering</li>
+                    <li>Expectation Maximization</li>
                     <li>BIRCH</li>
                     <li>DBSCAN</li>
                     <li>K-Means</li>
                 </ul>
-                <p></p>
-                <code></code>
+                <p>
+                    Balanced Iterative Reducing and Clusterting using Hierarchies(BIRCH) can cluster
+                    large datasets by creating a summary of the large dataset to retain as much 
+                    info as possible. In order to use the BIRCH algorithm, one can import the following
+                    modules:
+                </p>
+                <code>
+                    import matplotlib.pyplot as plt<br>
+                    from sklearn.datasets.samples_generator import make_blobs<br>
+                    from sklearn.cluster import Birch
+                </code>
+
+                <p>
+                    In order to use the DBSCAN algorithm, one can import the following module:
+                </p>
+                <code>
+                    from sklearn.cluster import DBSCAN
+                </code>
             </section>
 
             <section class="main-section" id="Regression">
                 <header>Regression</header>
-                <p></p>
-                    <code></code>
-                <p></p>
+                <p>
+                    Regression can be used to estimate relationship between a dependent variables 
+                    and one or more independent variables. There are different types of regression:
+                    linear regression, logistic regression, stepwise regression, and classifiers.
+                    Below is a module to import for logistic regression:
+                </p>
+                <code>
+                    from sklearn.linear_model import LogisticRegression
+                </code>
+                <p>
+                    Below is a module to import for linear regression
+                </p>
+                <code>
+                    from sklearn.linear_model import LinearRegression
+                </code>
+                <p>
+                    One should note that there is no method for calculating power and sample size. 
+                    We can take into account the rule made by Good and Hardin.
+                </p>
             </section>
             
 
             <section class="main-section" id="Feature_Engineering">
                 <header>Feature Engineering</header>
-                <p></p>
-                    <code></code>
-                <p></p>
-                <p></p>
-                    <code></code>
+                <p>
+                    Feature engineering consists of extracting features from data. It can be 
+                    used for predictive models and has been seen in code competitions.
+                </p>
+                <p>
+                    Here is a list of feature engineering techniques: imputation, categorical 
+                    encoding, binning, scaling, log transform, feature selection, and feature 
+                    grouping.
+                </p>
             </section>
 
             <section class="main-section" id="Reinforcement_Learning">
                 <header>Reinforcement Learning</header>
-                <p></p>
+                <p>
+                    Reinforcement learning is part of machine learning in which we look at how 
+                    agents take action in an environment to maximize the notion of cumulative reward.
+                    This fiel is studied in other disciplines such as game theory, control theory, 
+                    operations research, information theory, smilation-based optimization, multi-agent
+                    sysstems, swarm intelligence, and statistics.
+                </p>
             </section>
         </main>
     </body>

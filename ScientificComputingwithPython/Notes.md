@@ -167,4 +167,123 @@
 * Can fine-tune match, depends on how "clean" data is and purpose of application
 
 ## Regular Expressions: Matching and Extracting Data
+* re.search() returns a T/F depending on whether string matches reuglar experssion 
+* If we actually want the matching strings to be extracted, we us re.findall()
+* Greedy Matching: when it can match any two strings, it will match longer string. 
+* Non greedy matching: you can add ? character to chill on + and * 
+* Fine-tuning strinrg extraction: one can add paranthesis to not include white space in returned string
+
+## Regular Expressions: Practical Applications
+* One can use ".find()" to extract host name
+* Another method was to use ".split()". One print specific piece of string by choosing element of list outputed. 
+
+## Networking with Python
+* Free book: "Introduction to Networking: How the internet works" by charles R Severance
+* Easy to read book(made for high schoolers)
+* Transport Control Protocol(TCP)
+* Layers(bottom to top): link, internet, transport, application
+* TCP Connections==Sockets- endpoint of bidirectional inter-process communication flow across an internet protocol-based computer networks
+* TCP Port numbers - port is an application-specific or process-specific software communications endpoint 
+* Protocols can be in different ports
+* Common TCP Ports(Extensions): Telnet, SSH, HTTP, HTTPS, and others
+* Python allows one to talk to sockets with "socket" library. Call socket function
+* Now that we have socket, what data can we send and receive across socket?
+
+## Networking Protocol
+* Socket functions to connect our TC to server TC
+* Application protocol is what we're gonna send or receive to a socket
+* HTTP - Hypertext Transfer Protocol:
+    * This is the dominant application layer protocolo on internet
+* A protocol is set of rules that all parties follow so we can predict each other's behavior
+* Protocol, host, and document - (http://)(www.dr-chuck.com/)(page1.html)
+* Getting data from server:
+    * User clicks anchor tag with href
+    * Browser makes connection to web server and issues "GET" request
+    * Server returns HTML document to the Browser, which formats and displays document to user
+* Request/Response Cycle - governed by internet standards. These stanards are for internet protocols and established by IETF
+* Standards are called RFCs
+
+## Write Web Browser
+* First import library socket. Then make socket and connected to webserver with ".connect()"
+* After, send with ".send()"
+* We can then receive with ".recv()" with while loop. When we take in data, we also decode it.
+
+## Networking: Text Processing
+* We can use ord() function to get bits used to represent a character
+* UTF-8 has dynamic length(1-4 bytes). Recommended practice for encoding data
+* In Python 3, bytes are different. All strings are internally UNICODE
+* When we take about network socket, we need to encode strings. We need to decode it when we receive it
+* We encode and then send or receive and decode. 
+
+## Networking: Using urllib in Python
+* Import urllib.request. This library does all socket work for us and makes web pages look like file
+* Returns object that looks like filehandle
+* Data must be decoded and then ".strip()" can be used
+
+## Networking: Web Scraping with Python
+* Web scraping is when program or script pretends to be webpage in order to get information from webpages
+* Why scrape? Nonitor site for new info, spider web to make database. 
+* BE CAREFUL ABOUT WHICH WEBSITES ALLOW WEB SCRAPING
+* One library used for scraping from html documents is called BeautifulSoup
+
+## Using Web Services
+* Commonly used formats: XML and JSON
+* Wire protocol needs to be agreed upon. One could send data from one programming language to another programming language.
+
+## Web Services: XML
+* XML stands for eXtensible Markup Language
+* Purpose is to help info systems share structured data
+* Tags, attributes, serialization/deserialization
+* Start tag, end tag, text content, attribute, and self closing tag
+* White space don't matter in text content
+* Simple and complex elements. Think of XML as a tree or made up of paths
+
+## Web Services: XML Schema
+* XML Schema is description of legal format of an XML document
+* Used to define contract between systems, meaning there are constraints on structure and content of docs
+* XML validator has inputs of XML document and XML Schema Contract
+* Common language of XML Schema is XSD(There are more)
+* Date/Time Format (ISO 8601)
+* Import xml.etree.ElementTree as ET <--Import this library
+* GO OVER THIS AGAIN TO BETTER UNDERSTAND
+
+## Web Services: JSON
+* JSON representes data as neste "lists" and "dictionaries"
+* Import json as library. Result of json.loads(data) is a dictionary
+
+## Web Services: Service Oriented Approach
+* A service oriented approach is when data is stored across systems connected via internet or internet network
+* Services publish rules applications must follow to make use of service(API)
+* First two systems work together. As service becomes more useful, multiple applications want to use info/application 
+
+* Web Services: API
+* Application Program Interface specifies interface and controls behavior of objects in interface
+* Should read documentation of APIs
+* GO OVER THIS AGAIN TO BETTER UNDERSTAND
+
+## Web Services: API Rate Limiting and Security
+* Some APIs are free, others are not 
+* More requests can be obtained with key
+* Some APIs will require you to have account
+* Key authorization for security
+
+## Python Objects
+* Object oriented is self-contained code and data
+* Different type of objects(string, integer, dictionary objects)
+* Objects hide details
+* Class-template, method-defined capability of class, field/attribute - bit of data in class, object/instance-instance of class
+
+## Objects: A Sample class
+* class PartyAnimal   <----(example)
+* dir() command lists capabalities
+
+## Object Lifecycle
+* Objects are created, used, then discarded
+* Constructors and destructors
+* Constructor to set up instance variables
+* Both constructors and destructors asre optional in class definition. 
+* Destructors are seldom used, unlike constructor
+* We can have multiple instances of class, each of which has their own instance variables
+
+## Objects: Inheritance
 * 

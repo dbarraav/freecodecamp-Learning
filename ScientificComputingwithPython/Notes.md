@@ -286,4 +286,103 @@
 * We can have multiple instances of class, each of which has their own instance variables
 
 ## Objects: Inheritance
-* 
+* Make a new class which inherits capabilities of existing class
+
+## Relational Databases and SQLite
+* SQLITE is new software used in this lesson
+* Old tech used tapes for data storage/processing
+* How to best layout data? 
+* Relational databases model data by storing it in columns/rows in tables.
+* Database-contains many tables, relation(or table) - contains tuples and attributes, tuple(or row) - set of fields that represent an "object", attribute(or column or field) - one of many elements of data corresponging to object in row
+* SQL or Structured Query Language - issues commands to databse(create table, retrieve data, insert data, and delete data)
+* Web applications with databases: 
+    * Application developer - builds logic for app, monitors app for problems
+    * Database administrator - monitors/adjusts database as program runs in production
+* Database model or schema is structure or format of database
+* Common database systems:
+    * Oracle - large, commercial, 
+    * MySql - simpler but fast and scalable
+    * SqlServer - nice
+* For small projects, use open source software like HSQL, SQLite, Postgres
+
+## Make a Relational Database
+* Look up SQL commands
+* INSERT statement inserts row into table
+    * INSERT INTO [table name] [tuple name] VALUES [value]  --This is done with "Execute SQL" button
+* DELETE statement deletes row in table with selection criteria
+    * DELETE FROM [table name] WHERE [criteria]
+* UPDATE statements allows updating field with a clause
+    * UPDATE [table name] SET [tuple name=column value] WHERE [column name=column value]
+* Retrieve records with SELECT statement
+    * SELECT * FROM [table name]
+    * SELECT * FROM [table name] WHERE [column name=column value]
+* ORDER BY allows for sorting. 
+    * SELECT * FROM [table name] ORDER BY [column name]
+    * SELECT * FROM [table name] ORDER BY [column name] DESC - descending order
+
+## Relational Database Design
+* Design is in regards to dealing with multiple databases
+* Design includes relationships between databases
+* Basic rule - don't put same string data in twice, use relationship instead
+
+## Representing Relationships in a Relational Database
+* Database Normalization(3NF)
+    * Do not replicate data - reference data instead
+    * Use integers for keys and for references
+    * Add special key column to each tables to create references. Call it "id" column 
+* Three kinds of keys
+    * Primary key - generally an integer auto-increment field
+    * Logical key - what the outside world uses for lookup
+    * Foreign key -  generally an integer key pointing to a row in another table 
+* Key rules - never use logical key as primary keys, logical keys can and do change, relationships based on matching strings are less efficient 
+* Foreign key is when table has column that contains a key which poitns to primary key of another tbale 
+
+## Relationships Building 
+* CREATE TABLE [tuple name] ( "id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE [tuple name] TEXT)
+* INSERT command inserts new row
+* GO OVER THIS AGAIN TO BETTER UNDERSTAND
+
+## Relational Databases: Join Operation
+* JOIN statement links across several tables
+* ON indicates how two table are to be joined
+* GO OVER THIS AGAIN TO BETTER UNDERSTAND
+
+## Relational Databases: Many-to-many Relationships
+* Many to one relationship - common
+* Connection or junction table to show the many-to-many relationship
+* Complexity makes speed possible. Get results fast as data size grows.
+* Normalizing data and linking it with keys, one can scan less data before getting results
+* Spend time building database to ensure success when app is available
+* Additional SQL topics: indexes, constraints, and transactions
+* GO OVER THIS AGAIN TO BETTER UNDERSTAND
+
+# Visualizing Data with Python
+* Gather data, clean/process, analyze or visualize
+* Data mining technologies: Hadoop Apache, Spark Apache, AWS Amazong, Pentaho
+* Example: Google Geodata API
+
+## Data Visualization: Page Rank
+* Page Rank - write simple web page crawler. Compute Google's Page Rank algorithm. Visualize resulting network
+* Search Engine Architecture: web crawling, index building, searching
+* Web crawler - create copy of all visited pages for later processing by search engine that indexes downloaded pages for fast searches
+* Web crawler - retrieve page, look for links, add links to list, repeat
+* Web crawkling policy - selection policy, re-visit policy, politeness polocy, parallelization policy 
+* Index building uses page rank algorithm 
+* Search index - collects data and parses it for fast data retrieval
+* GO OVER THIS AGAIN TO BETTER UNDERSTAND
+
+## Data Visualization: Mailing Lists
+* GMane - crawl archive of mailing list, do analysis, visualize as word cloud and lines
+* D3 is common JavaScript visualization library
+* GO OVER THIS AGAIN TO BETTER UNDERSTAND
+
+
+
+
+
+
+
+
+
+
+    

@@ -42,4 +42,34 @@
 * .shift() removes the first element of array. Works like how .pop() does
 
 # Functions
+* A function can be initialized by using function [name](){[contents]}
+* The function can be called by  using function();
+* A function can accept parameters
+* Variables created without var are within the global scope
+* Variables defined with var within function have local scope
+* The local variable takes precedence over global variable if within function 
+* Use return to send value back from function 
+* When the function has no return statement, the returned value is undefined
+* I can assigned function(arg) to variable
+* To write function for a queue, first use push() and then shift() function
+
+## If/else statement and comparison operators
+* Boolean values - true or false (lowercase)
+* An if statement can has its condition in parentheses and uses brackets to contain it
+* Equality operator is ==
+* Strict equality is ===. Unlike equality operator, it does not attempt to convert values being compared to a common type. 
+    * 3 == '3' returns true since type conversion if performed
+* Type of variable can be determined by using typeof [val]
+* Inequality operator is != . Returns opposite value of equality expression
+* Strict inequality operator is !== . 
+* Greater than operator is > . Greater than or equal to operator is >=
+* Less than operator is < . Less than or equal to operator is <=
+* Logical and operator && is used to if both of operands are true
+* Logical or operator || is used to see if either of operands is true
+* Else statement also contained by brackets
+* To see which out of multiple conditions are met, use else if (condition){}
+* Make sure order of if, else if, else statements is correct
+* Golf code was used to practice this section
+
+## Switch statement
 * 

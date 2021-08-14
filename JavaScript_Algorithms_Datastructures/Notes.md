@@ -72,4 +72,27 @@
 * Golf code was used to practice this section
 
 ## Switch statement
+* Switch statement can have many case statements. Case executed for first matched case until break.
+* Switch statement is contained by brackets. 
+* Cases end in break statements. In addition, each case value is followed by a colon
+* A default case can be added at the end. It has no case value
+* If multiple inputs have same output, it can be represented by not including a break statement in the preceding case statement. The case statement with break statement can indicate that it could be one of the preceding cases.
+* Switch statements can be used to replace several else if statements
+* Counting cards game was used to test switch statement
+
+# Return
+* return can be used to return a comparison (a < b )
+* return statement once reached stops function. 
+
+## Objects
+* Access objects through properties
+* Properties are stored as strings or numbers. Quotes around string can be omitted if it's a single word
+* Non-string properties are typecasted as strings
+* Access properties of object using dot notation. Can also used bracket notation[]
+* Bracket notation is useful when iterating through an object's properties
+* Can also use bracket notation when the property's name is collected dynamically during the program execution
+* You can update or add properties by using dot or bracket notation
+* One can delete object's property by using delete object.property;
+* Objects can be thought of as a key/value storage
+    * A switch statement can be converted to an object whose property can be found
 * 
